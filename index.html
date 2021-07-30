@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO list</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="main">
+        <header class="head">
+            <h1>To-Do list</h1>
+        </header>
+        <div class="srch">
+            <input type="text" id="srch" placeholder="Search here">
+            <button type="submit" id="btn">Search</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="BOX">
+
+            <div class="C1" id="BX-1">
+                <div class="inp">
+                    <label for="title">Title</label>
+                    <br>
+                    <input  type="text" id="title" placeholder="Enter Your Title">
+                </div>
+                <div class="txt">
+                    <label for="txt">Description</label>
+                    <br>
+                    <textarea id="txt" class="form-control" name="txt" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="C1" id="dte">
+                <label for="date">Date:</label>
+                <br>
+                <input type="date" id="date" name="txt">
+            </div>
+            <div class="buttons">
+                <button type="submit" id="Add" onclick="getupdate()" >Add to list</button>
+                <button type="submit" id="ers" onclick="clearall()">Remove All</button>
+            </div>
+        </div>
+        <div class="C2">
+            <div class="BX2">
+                <div class="itm" id="items">
+                    <h2>Your Items</h2>
+                </div>
+            </div>
+            <div class="list">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr no</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Descriptionst</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="TableBody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td><button class="btn">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

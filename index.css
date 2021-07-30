@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+/* Header */
+.main{
+    margin: 0px 0px;
+    border: 2px solid black;
+    display: flex;
+    background-color: rgb(31, 30, 30);
+}
+.srch{
+    margin-right: 25px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#srch{
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 30px;
+    text-align: center;
+    width: 250px;
+}
+#srch:hover{
+    border: 3px solid rgb(255, 255, 255);
+}
+/* search button */
+#btn{
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 2px;
+    width: 80px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#btn:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+.head{
+    margin: auto;
+    margin-left: 38%;
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+
+}
+.head h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: white;
+}
+/* BOX1 */
+.BOX{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.C1{
+    margin: 0px 50px;
+}
+#dte label{
+    font-size: 30px;
+    margin-right: 10px;
+}
+#dte input{
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
+#BX-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    height: 200px;
+}
+.inp{
+    margin-top: 10px;
+}
+.inp label{
+    font-size: 30px;
+}
+.inp input{
+    border: 3px solid black;
+}
+#title{
+    width: 400px;
+    height: 50px;
+}
+.txt{
+    margin-top: 10px;
+}
+.txt label{
+    font-size: 30px;
+    margin-right: 158px;
+}
+.txt textarea{
+    border: 3px solid black;
+    width: 400px;
+    height: 50px;
+}
+.buttons{
+    margin-top: 60px;
+}
+.buttons button{
+    border: 3px solid black;
+    height: 40px;
+    width: 120px;
+    margin: 0px 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+}
+#Add{
+    background-color: rgb(3 3 3);
+}
+#Add:hover{
+    background-color: seagreen;
+    cursor: pointer;
+}
+#ers{
+    background-color: rgb(0, 0, 0);
+}
+#ers:hover{
+    background-color: rgb(223, 27, 27);
+    cursor: pointer;
+}
+/* BOX-2 */
+.C2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+.BX2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    height: 70px;
+    width: 50%;
+}
+
+.list {
+    height: 100px;
+    width: 50%;
+    margin-top: 40px;
+}
+.table{
+    width: 100%;
+}
+.table thead tr{
+    text-align: left;
+    background-color: rgb(71, 75, 75);
+}
+.table thead th{
+    padding: 12px;
+    width: 30px; 
+    font-size: 18px;
+    color: white;
+}
+.table tbody th{
+    text-align: left;
+}
+.table tbody tr{
+    font-size: 19px;
+}
+.table tbody button{
+    background-color: rgb(241, 55, 55);
+    color: white;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.table tbody button:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+@media (max-width: 900px) and (min-width: 0px){
+    .srch{
+        display: none;
+    }
+    .head{
+        margin: auto;
+    }
+    .BOX{
+        display: flex;
+        flex-direction: column;
+    }
+    #BX-1{
+        margin-top: 0px;
+    }
+    .C1{
+        margin: auto;
+    }
+    #title {
+        width: 250px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .txt textarea {
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+    }
+    #date{
+        width: 250px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .txt label {
+        font-size: 30px;
+        margin-right: 110px;
+    }
+    .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .buttons button {
+        width: 100px;
+        font-size: 15px;
+    }
+    .BX2{
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #items h2{
+        font-size: 35px;
+    }
+    .list{
+        width: 98%;
+    }
+    .table thead th {
+        padding: 2px;
+        font-size: 15px;
+    }
+    .table tbody tr{
+        font-size: 15px;
+    }
+    .table tbody button{
+        width: 42px;
+        height: 18px;
+        font-size: 20px;
+        content-visibility: hidden;
+    }
+
+}
